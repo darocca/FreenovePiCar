@@ -21,8 +21,8 @@ def test_Led():
         
 def test_Motor(): 
     import time
-    from motor import Ordinary_Car  
-    PWM = Ordinary_Car()    
+    from motor import MotorController  
+    PWM = MotorController()    
     try:
         PWM.set_motor_model(1000,1000,1000,1000)         #Forward
         print ("The car is moving forward")

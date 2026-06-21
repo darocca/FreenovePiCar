@@ -1,5 +1,5 @@
 from ultrasonic import Ultrasonic
-from motor import Ordinary_Car
+from motor import MotorController
 from servo import Servo
 from infrared import Infrared
 from adc import ADC
@@ -25,7 +25,7 @@ class Car:
         if self.sonic is None:
             self.sonic = Ultrasonic()
         if self.motor is None:
-            self.motor = Ordinary_Car()
+            self.motor = MotorController()
         if self.infrared is None:
             self.infrared = Infrared()
         if self.adc is None:
