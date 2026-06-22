@@ -6,7 +6,7 @@ sudo mv ./FreenovePiCar /
 echo 'export PYTHONPATH="/FreenovePiCar:${PYTHONPATH}"' >> ~/.bashrc
 source ~/.bashrc
 
-cp /FreenovePiCar/samples ~/samples -r
+cp /FreenovePiCar/samples ~ -r
 
 sudo python /FreenovePiCar/Code/setup.py
 
