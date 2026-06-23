@@ -3,7 +3,7 @@ if [ -d /FreenovePiCar ]; then
 fi
 
 sudo mv ./FreenovePiCar /
-echo 'export PYTHONPATH="/FreenovePiCar:${PYTHONPATH}"' >> ~/.bashrc
+echo 'export PYTHONPATH="/FreenovePiCar/Code/Server:${PYTHONPATH}"' >> ~/.bashrc
 source ~/.bashrc
 
 cp /FreenovePiCar/samples ~ -r
