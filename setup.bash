@@ -18,8 +18,8 @@ cp /FreenovePiCar/samples ~ -r
 sudo python /FreenovePiCar/Code/setup.py
 
 # ir setup
-sudo echo "dtoverlay=gpio-ir,gpio=16" >> /boot/firmware/config.txt
-sudo echo "ir-keytable -p all" >> /etc/rc.local
+sudo sh -c 'echo "dtoverlay=gpio-ir,gpio=16" >> /boot/firmware/config.txt'
+sudo sh -c 'sudo echo "ir-keytable -p all" >> /etc/rc.local'
 sudo pip3 install evdev --break-system-packages
 sudo apt-get install evtest
 sudo apt-get install -y lirc
